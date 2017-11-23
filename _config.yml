@@ -5,15 +5,26 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-#theme                    : "minimal-mistakes-jekyll"
+# theme: minimal-mistakes-jekyll #本地启用，使用本地的jekyll，加快构建速度
+remote_theme: "mmistakes/minimal-mistakes" #github pages启用
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-remote-theme #github pages启用，本地关闭
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "zh_CN.utf8"
-title                    : "青蛙的博客"
+title                    : "梦溪笔谈"
 title_separator          : "-"
-name                     : "青蛙"
-description              : "一个青蛙的独白"
+name                     : "小妮子的老公"
+description              : "平则独善其家，富则兼济天下"
 url                      : #"https://www.cbq.space"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -84,9 +95,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "青蛙"
+  name             : "小妮子的老公"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "一个渴望跳出井底的青蛙."
+  bio              : "平则独善其家，富则兼济天下"
   location         : "中国-广东"
   email            : "buqing.chen.scau@gmail.com"
   uri              :
@@ -188,16 +199,6 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: "Asia/Hong_Kong" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-remote_theme: "mmistakes/minimal-mistakes"
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:

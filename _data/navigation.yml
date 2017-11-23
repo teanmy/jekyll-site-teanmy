@@ -2,10 +2,10 @@
 main:
   - title: "文章列表"
     url: /year-archive/
-  - title: "站点地图"
-    url:  /sitemap/
-  - title: "关于"
-    url: /sample-page/
+  # - title: "站点地图"
+  #   url:  /sitemap/
+  #- title: "关于"
+  #  url: /about-me/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
